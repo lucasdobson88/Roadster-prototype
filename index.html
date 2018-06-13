@@ -304,7 +304,7 @@
 											<div class="slds-form-element">
 												<div class="slds-form-element__control">
 													<button type="button" data-toggle="modal" data-target="#optionsModal" class="slds-button slds-button_outline-brand purple">ADD</button>
-													<button type="button" class="slds-button slds-button_outline-brand normal">SKIP</button>
+													<button id="skip-options" type="button" class="slds-button slds-button_outline-brand normal">SKIP</button>
 												</div>
 											</div>
 										</div>
@@ -477,6 +477,12 @@
 			modalControl("#car-options", "#selected-options", "#clear-options", "#select-options", true, ".amount-wrapper");
 
 			selectNext("#select-type", ".options-wrapper");
+
+			$("#skip-options").on("click",
+				function() {
+					$(".amount-wrapper").removeClass("hidden");
+
+				});
 		});
 	</script>
 </body>
