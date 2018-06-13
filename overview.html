@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="node_modules/glyphicons-only-bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Personal Info</p>
+
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Living situation</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Employment</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Finances</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Review</p>
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 6 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 100%">
+									<span class="slds-assistive-text">Progress: 100%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Review your application</h2>
+								<div id="form-wrapper">
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>CAR</label>
+												<p>Ford Mustang, 2017 GT Premium, Personal use.</p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<a id="make-edit">edit</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>PERSONAL INFORMATION</label>
+												<p>
+													James Lewis, james.lewis@gmail.com <br />
+													Permanent resident, Married
+												</p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<a id="make-edit">edit</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>LIVING SITUATION</label>
+												<p>House owner, Unit 3, 445 St Kilda rd, Elwood</p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<a id="make-edit">edit</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>EMPLOYMENT</label>
+												<p>Full time, Bunnings, $8000.00 Monthly</p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<a id="make-edit">edit</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>FINANCES</label>
+												<p>
+													Total income: $21,003.50, total expenses:
+													$5,500, total assets: $1,004,000, total liabilities: $200,000.
+												</p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<a id="make-edit">edit</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="slds-form-element">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="no-licence">
+												<label class="form-check-label" for="exampleCheck1">I hereby notify.... directories are perfect for customers that are searching for a particular topic.</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<div class="slds-form-element">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="no-licence">
+												<label class="form-check-label" for="exampleCheck1">I hereby notify.... directories are perfect for customers that are searching for a particular topic.</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<p>Do you forsee any changes to your situation which could effect repayments?</p>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="radio">
+													<label><input id="show-spouse" type="radio" name="optradio">Yes</label>
+													<label><input type="radio" name="optradio">No</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<textarea id="textarea-id-01" class="slds-textarea" placeholder="Write..."></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-12">
+												<a href="quote.html" style="width: 100%; padding: 20px;" class="slds-button slds-button_outline-brand purple">GET YOUR QUOTE</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Select options</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Sunroof - Electric</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">GPS (Satelite navigation)</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Paint - Metallic</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Sunroof - Electric</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">GPS (Satelite navigation)</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Paint - Metallic</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" id="select-options" class="slds-button slds-button_outline-brand purple">Done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			initButtonSelection("#car-make", "#car-make-select", ".make-select", "#make-edit", true, ".year-wrapper");
+			initButtonSelection("#car-year", "#car-year-select", ".make-select", "#year-edit", true, ".model-wrapper");
+			initButtonSelection("#car-model", "#car-model-select", ".make-select", "#model-edit", true, ".body-type-wrapper");
+			initButtonSelection("#car-body-type", "#car-body-type-select", ".make-select", "#body-type-edit", true, ".type-wrapper");
+			modalControl("#car-options", "#selected-options", "#clear-options", "#select-options", true, ".amount-wrapper");
+
+			selectNext("#select-type", ".options-wrapper");
+		});
+	</script>
+</body>
+</html>

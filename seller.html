@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Prepare for settlement</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Seller</p>
+
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Purchase details</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Verify</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Direct debit</p>
+
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-progress__marker">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 25%">
+									<span class="slds-assistive-text">Progress: 0%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Seller details</h2>
+								<p>Provide information about the seller</p>
+								<div id="form-wrapper">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">DEALERSHIP</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="Dealership" style="width: 100%;" class="form-control" placeholder="Dealership" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">FIRST NAME</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="FirstName" style="width: 100%;" class="form-control" placeholder="First Name" />
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">LAST NAME</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="LastName" style="width: 100%;" class="form-control" placeholder="Last Name" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">E-MAIL</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="Email" style="width: 100%;" class="form-control" placeholder="Email" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<h4>What's the seller's mobile number?</h4>
+									
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">MOBILE</label>
+													<div class="slds-form-element__control">
+														<input type="number" id="Mobile" style="width: 100%;" class="form-control" placeholder="Mobile" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<p class="align-left">
+													<button type="button" class="slds-button slds-button_outline-brand normal">BACK</button>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p class="align-right">
+													<a href="purchase-details.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								<h3>Loan amount</h3>
+								<div class="row">
+									<div class="col-md-6">
+										Purchase price
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<a>$60,000.00</a>
+									</div>
+								</div>
+								<hr />
+								<div class="row">
+									<div class="col-md-6">
+										<h6>Total loan amount</h6>
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<p class="font-25">$60,000.00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			
+		});
+	</script>
+</body>
+</html>

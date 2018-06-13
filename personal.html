@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="node_modules/glyphicons-only-bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Personal Info</p>
+
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Living situation</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Employment</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Finances</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Confirm</p>
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-progress__marker">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 6 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 0%">
+									<span class="slds-assistive-text">Progress: 0%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+							<h2>Tell us about yourself</h2>
+							<p>Your name, email, drivers licence and if your adding a second applicant</p>
+								<div id="form-wrapper">
+									<!--<div class="form-item">
+										<h3>Do you know the car you want to buy?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="">
+													<select class="form-control" id="car-decision">
+														<option selected>I know the car I want to buy</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>-->
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">FIRST NAME</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="FirstName" style="width: 100%;" class="form-control" placeholder="First Name" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">LAST NAME</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="LastName" style="width: 100%;" class="form-control" placeholder="Last Name" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">YOUR E_MAIL</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="Email" style="width: 100%;" class="form-control" placeholder="Email" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-7">
+													<div class="form-item">
+														<div class="slds-form-element">
+															<div class="slds-form-element__control">
+																<label class="">DATE OF BIRTH</label>
+																<div class="">
+																	<select class="form-control no-padding" id="">
+																		<option selected>16/02/1980</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-5">
+													<div class="form-item">
+														<div class="slds-form-element">
+															<div class="slds-form-element__control">
+																<label class="">GENDER</label>
+																<div class="">
+																	<select class="form-control no-padding" id="">
+																		<option selected>Male</option>
+																		<option>Female</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								
+									<div class="row">
+										<div class="col-md-5">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">DRIVERS LICENCE</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="LicenceNo" style="width: 100%;" class="form-control" placeholder="Licence Number" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-7">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-item">
+														<div class="slds-form-element">
+															<div class="slds-form-element__control">
+																<label class="">STATE</label>
+																<div class="">
+																	<select class="form-control no-padding" id="state-select">
+																		<option selected>Select one</option>
+																		<option>Victoria</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-item">
+														<div class="slds-form-element">
+															<div class="slds-form-element__control">
+																<label class="">TYPE</label>
+																<div class="">
+																	<select class="form-control no-padding" id="type-select">
+																		<option selected>Select one</option>
+																		<option>FULL</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-item">
+
+											<div class="slds-form-element">
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="no-licence">
+													<label class="form-check-label" for="exampleCheck1">I don't have an Australian drivers licence</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+									
+								<div class="other-wrapper hidden">
+									<div class="form-item">
+										<h3>Whats your mobile number?</h3>
+										<div class="slds-form-element">
+											<label class="" for="address">MOBILE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="Mobile" style="width: 100%;" class="form-control" placeholder="Mobile" />
+											</div>
+										</div>
+									</div>
+										
+									<div class="form-item">
+										<h3>Whats your relationship status?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">GENDER</label>
+												<div class="">
+													<select class="form-control no-padding" id="">
+														<option selected>Married</option>
+														<option>Single</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+										
+									<div class="form-item">
+										<h3>Dependents</h3>
+										<p>Number of dependents</p>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="input-group">
+													<span class="input-group-btn">
+														<button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+															<span class="glyphicon glyphicon-minus"></span>
+														</button>
+													</span>
+													<input type="text" name="quant[1]" class="form-control input-number plusminus" value="1" min="1" max="10">
+													<span class="input-group-btn">
+														<button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+															<span class="glyphicon glyphicon-plus"></span>
+														</button>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+										
+									<div class="form-item">
+										<h3>Is there a second applicant applying?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="radio">
+													<label><input id="show-spouse" type="radio" name="optradio">Yes</label>
+													<label><input type="radio" name="optradio">No</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+									
+								<div class="spouse-wrapper hidden">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="" for="address">FIRST NAME</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="FirstName2" style="width: 100%;" class="form-control" placeholder="FirstName2" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-item">
+													
+												<div class="slds-form-element">
+													<label class="" for="address">LAST NAME</label>
+													<div class="slds-form-element__control">
+														<input type="text" id="LastName2" style="width: 100%;" class="form-control" placeholder="LastName2" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<p class="align-left">
+													<button class="slds-button slds-button_outline-brand normal">BACK</button>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p class="align-right">
+													<a href="living.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								<p>1. Free directories: directories are perfect for customers that are searching for a particular topic.</p>
+								<p>What's great about them is that you only have to post once and they are good for long periods of time. It saves a lot of your time when you don't have to resubmit your information every week or every month.
+								The bad news is most of your traffic won't come from here. I still feel it is worth it to get your link out there.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+	
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			initMinusPlus();
+			selectNext("#state-select", ".other-wrapper");
+			selectNext("#type-select", ".other-wrapper");
+
+			$("#show-spouse").click(function() {
+				$(".spouse-wrapper").removeClass("hidden");
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="node_modules/glyphicons-only-bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Personal Info</p>
+
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Living situation</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Employment</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Finances</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Confirm</p>
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 6 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 60%">
+									<span class="slds-assistive-text">Progress: 60%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Your employment</h2>
+								<p>You must provide at least 3 years work history</p>
+								<div id="form-wrapper">
+									<!--<div class="form-item">
+										<h3>Do you know the car you want to buy?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="">
+													<select class="form-control" id="car-decision">
+														<option selected>I know the car I want to buy</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>-->
+									<div class="form-item">
+										<h3>Whats your current employment situation?</h3>
+										<p>Are you currently full time, part time, sole trader, business owner</p>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="">
+													<select class="form-control" id="emp-status-select">
+														<option selected>select one</option>
+														<option>full time</option>
+														<option>part time</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="details-wrapper hidden">
+										<div class="form-item">
+											<div class="slds-form-element">
+												<label class="">OCCUPATION</label>
+												<div class="slds-form-element__control">
+													<input type="text" id="Occupation" style="width: 100%;" class="form-control" placeholder="Occupation" />
+												</div>
+											</div>
+										</div>
+
+										<div class="form-item">
+											<div class="slds-form-element">
+												<label class="">COMPANY NAME</label>
+												<div class="slds-form-element__control">
+													<input type="text" id="CompanyName" style="width: 100%;" class="form-control" placeholder="Company Name" />
+												</div>
+											</div>
+										</div>
+
+										<div class="form-item">
+											<div class="slds-form-element">
+												<label class="">ADDRESS</label>
+												<div class="slds-form-element__control">
+													<input type="text" id="Address" style="width: 100%;" class="form-control" placeholder="Address" />
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-item">
+													<div class="slds-form-element">
+														<label class="">CONTACT PERSON</label>
+														<div class="slds-form-element__control">
+															<input type="text" id="ContactPerson" style="width: 100%;" class="form-control" placeholder="Contact Person" />
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-item">
+													<div class="slds-form-element">
+														<label class="">TELEPHONE NUMBER</label>
+														<div class="slds-form-element__control">
+															<input type="text" id="TelephoneNumber" style="width: 100%;" class="form-control" placeholder="Telephone Number" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-item">
+											<h3>Whats the length of time you have been working here?</h3>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="slds-form-element">
+														<div class="slds-form-element__control">
+															<label class="">YEARS</label>
+															<div class="">
+
+																<select class="form-control" id="emp-years-select">
+																	<option value="99">Select one</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="3">4</option>
+																	<option value="3">5+</option>
+																</select>
+															</div>
+
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div id="emp-months-select" class="slds-form-element hidden">
+														<div class="slds-form-element__control">
+															<label class="">MONTHS</label>
+															<div class="">
+																<select class="form-control">
+																	<option value="1" selected>1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="3">4</option>
+																	<option value="3">5</option>
+																	<option value="3">6</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<p class="align-left">
+													<button class="slds-button slds-button_outline-brand normal">BACK</button>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p class="align-right">
+													<a href="finances.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								<p>1. Free directories: directories are perfect for customers that are searching for a particular topic.</p>
+								<p>
+									What's great about them is that you only have to post once and they are good for long periods of time. It saves a lot of your time when you don't have to resubmit your information every week or every month.
+									The bad news is most of your traffic won't come from here. I still feel it is worth it to get your link out there.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			initMinusPlus();
+			selectNext("#emp-status-select", ".details-wrapper");
+
+			$("#emp-years-select").change(function () {
+				var obj = this;
+				if (parseInt($("#emp-years-select option:selected").text()) < 3) {
+					$("#emp-months-select").removeClass("hidden");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

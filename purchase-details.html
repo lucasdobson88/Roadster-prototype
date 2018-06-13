@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Prepare for settlement</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Seller</p>
+
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Purchase details</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Verify</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Direct debit</p>
+
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 50%">
+									<span class="slds-assistive-text">Progress: 0%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Purchase details</h2>
+
+								<div id="form-wrapper">
+									<h4>What is the car worth?</h4>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">PURCHASE PRICE</label>
+													<div class="slds-form-element__control">
+														<input value="$50,000" type="text" id="PurchasePrice" style="width: 100%;" class="form-control" placeholder="Purchase Price" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-12">
+											<h4>Did you have a cash contribution?</h4>
+											<p>
+												A cash contribution is when a potential buyer gives a
+												seller a cash amount to hold the car.
+											</p>
+											<div class="form-item">
+												<div class="slds-form-element__control">
+													<div class="radio">
+														<label><input id="show-spouse" type="radio" name="optradio">YES</label>
+														<label><input type="radio" name="optradio">NO</label>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">CASH CONTRIBUTION</label>
+													<div class="slds-form-element__control">
+														<input value="$500" type="text" id="CashContribution" style="width: 100%;" class="form-control" placeholder="Cash Contribution" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-12">
+											<h4>Did you have a deposit?</h4>
+											<p>
+												A cash contribution is when a potential buyer gives a
+												seller a cash amount to hold the car.
+											</p>
+											<div class="form-item">
+												<div class="slds-form-element__control">
+													<div class="radio">
+														<label><input id="show-spouse" type="radio" name="optradio">YES</label>
+														<label><input type="radio" name="optradio">NO</label>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-item">
+												<div class="slds-form-element">
+													<label class="">DEPOSIT</label>
+													<div class="slds-form-element__control">
+														<input value="$9,500" type="text" id="Deposit" style="width: 100%;" class="form-control" placeholder="Deposit" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-md-12">
+										<h4>Do you have a trade-in?</h4>
+										<div class="form-item">
+											<div class="slds-form-element__control">
+												<div class="radio">
+													<label><input id="show-spouse" type="radio" name="optradio">YES</label>
+													<label><input type="radio" name="optradio">NO</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<h4>How much do you plan to trade-in the car for?</h4>
+										<div class="form-item">
+											<div class="slds-form-element">
+												<label class="">TRADE-IN PRICE</label>
+												<div class="slds-form-element__control">
+													<input value="$9,000" type="text" id="Trade" style="width: 100%;" class="form-control" placeholder="Trade-in price"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="button-wrapper">
+									<div class="row">
+										<div class="col-md-6">
+											<p class="align-left">
+												<button type="button" class="slds-button slds-button_outline-brand normal">BACK</button>
+											</p>
+										</div>
+										<div class="col-md-6">
+											<p class="align-right">
+												<a href="verify2.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						<div class="col-md-5 grey-side">
+							<h3>Loan amount</h3>
+							<div class="row">
+								<div class="col-md-6">
+									Purchase price
+								</div>
+								<div style="text-align: right;" class="col-md-6">
+									<a>$60,000.00</a>
+								</div>
+							</div>
+							<hr />
+							
+							<div class="row">
+								<div class="col-md-6">
+									- Less deposit
+								</div>
+								<div style="text-align: right;" class="col-md-6">
+									<a>$9,500.00</a>
+								</div>
+							</div>
+							<hr />
+							
+							<div class="row">
+								<div class="col-md-6">
+									- Less trade in
+								</div>
+								<div style="text-align: right;" class="col-md-6">
+									<a>$9,000.00</a>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-md-6">
+									<h6>Total loan amount</h6>
+								</div>
+								<div style="text-align: right;" class="col-md-6">
+									<p class="font-25">$60,000.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="container">
+
+		</div>
+	</div>
+
+	</div>
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+		});
+	</script>
+</body>
+</html>

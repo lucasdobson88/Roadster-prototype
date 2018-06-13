@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="node_modules/glyphicons-only-bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Personal Info</p>
+
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Living situation</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Employment</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Finances</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Confirm</p>
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 6 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 80%">
+									<span class="slds-assistive-text">Progress: 80%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+					<div class="row">
+					<!--Finance wrapper start-->
+					<div class="col-md-7 finance-wrapper">
+					<h2>What are your finances?</h2>
+					<p>A list of your assets, liabilities, income, expenses</p>
+					<div id="form-wrapper">
+					<div class="assets-wrapper">
+						<div class="form-item">
+							<div class="row">
+								<div class="col-md-7">
+									<h3>Add your assets</h3>
+									<p>Include your spouses assets also</p>
+								</div>
+								<div class="col-md-5">
+									<p class="align-right">
+										<div class="dropdown">
+											<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Add
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a data-id="Cash / Bank" class="dropdown-item addAsset">Cash / Bank</a>
+												<a data-id="House" class="dropdown-item addAsset">House</a>
+												<a data-id="Supannuation" class="dropdown-item addAsset">Supannuation</a>
+												<a data-id="Life insurance" class="dropdown-item addAsset">Life insurance</a>
+											</div>
+										</div>
+									</p>
+								</div>
+							</div>
+
+							<div class="asset-items-wrapper hidden">
+								<div class="row">
+									<div class="col-md-6">
+										<label>ASSET TYPE</label>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-5">
+												<label>BALANCE</label>
+											</div>
+											<div class="col-md-4">
+												<label>&nbsp;</label>
+											</div>
+											<div class="col-md-3">
+												<label>&nbsp;</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="asset-items">
+								</div>
+							</div>
+							<div class="finance-form asset-finance-form hidden">
+								<div class="add-finance-wrapper">
+									<div class="row">
+										<div class="col-md-4">
+
+											<div class="slds-form-element">
+												<label>BALANCE</label>
+												<div class="slds-form-element__control">
+													<input type="text" id="assetBalance" style="width: 100%;" class="form-control" placeholder="Balance"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+
+											<div class="slds-form-element">
+												<label>PAYMENT</label>
+												<div class="slds-form-element__control">
+													<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<label class="">PER</label>
+													<div class="">
+														<select class="form-control" id="">
+															<option value="99">Month</option>
+															<option value="1">Fortnight</option>
+															<option value="2">Week</option>
+														</select>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<hr/>
+											<div class="button-wrapper">
+												<button id="asset-submit" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="form-item">
+						<div class="row">
+							<div class="col-md-7">
+								<h3>Add your liabilities</h3>
+								<p>Include your spouses liabilities</p>
+							</div>
+							<div class="col-md-5">
+								<p class="align-right">
+									<div class="dropdown">
+										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+											<a data-id="Home loan" class="dropdown-item addLiability">Home loan</a>
+											<a data-id="Motor Vehicle loan" class="dropdown-item addLiability">Motor Vehicle loan</a>
+											<a data-id="Personal loan" class="dropdown-item addLiability">Personal loan</a>
+											<a data-id="Unsecured loans" class="dropdown-item addLiability">Unsecured loans</a>
+											<a data-id="Bank over draft" class="dropdown-item addLiability">Bank over draft</a>
+											<a data-id="Other" class="dropdown-item addLiability">Other</a>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+						<div class="liability-items-wrapper hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<label>LIABILITY TYPE</label>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-5">
+											<label>BALANCE</label>
+										</div>
+										<div class="col-md-4">
+											<label>&nbsp;</label>
+										</div>
+										<div class="col-md-3">
+											<label>&nbsp;</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="liability-items">
+							</div>
+						</div>
+						<div class="finance-form liability-finance-form hidden">
+							<div class="add-finance-wrapper">
+								<div class="row">
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>BALANCE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="liabilityBalance" style="width: 100%;" class="form-control" placeholder="Balance"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>PAYMENT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">PER</label>
+												<div class="">
+													<select class="form-control" id="">
+														<option value="99">Month</option>
+														<option value="1">Fortnight</option>
+														<option value="2">Week</option>
+													</select>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<hr/>
+										<div class="button-wrapper">
+											<button id="liability-submit" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="form-item">
+						<div class="row">
+							<div class="col-md-7">
+								<h3>Add your income</h3>
+							</div>
+							<div class="col-md-5">
+								<p class="align-right">
+									<div class="dropdown">
+										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+											<a data-id="Primary income (After tax)" class="dropdown-item addIncome">Primary income (After tax)</a>
+											<a data-id="Bonus (After tax)" class="dropdown-item addIncome">Bonus (After tax)</a>
+											<a data-id="Commission (After tax)" class="dropdown-item addIncome">Commission (After tax)</a>
+											<a data-id="Life Overtime (After tax)" class="dropdown-item addIncome">Life Overtime (After tax)</a>
+											<a data-id="Rental income" class="dropdown-item addIncome">Rental income</a>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+						<div class="income-items-wrapper hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<label>INCOME TYPE</label>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-5">
+											<label>BALANCE</label>
+										</div>
+										<div class="col-md-4">
+											<label>&nbsp;</label>
+										</div>
+										<div class="col-md-3">
+											<label>&nbsp;</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="income-items">
+							</div>
+						</div>
+						<div class="finance-form income-finance-form hidden">
+							<div class="add-finance-wrapper">
+								<div class="row">
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>BALANCE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="incomeBalance" style="width: 100%;" class="form-control" placeholder="Balance"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>PAYMENT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">PER</label>
+												<div class="">
+													<select class="form-control" id="">
+														<option value="99">Month</option>
+														<option value="1">Fortnight</option>
+														<option value="2">Week</option>
+													</select>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<hr/>
+										<div class="button-wrapper">
+											<button id="income-submit" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="form-item">
+						<div class="row">
+							<div class="col-md-7">
+								<h3>Add your expenses</h3>
+								<p>Include your spouses expenses also</p>
+							</div>
+							<div class="col-md-5">
+								<p class="align-right">
+									<div class="dropdown">
+										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+											<a data-id="Liabilities repayments" class="dropdown-item addExpense">Liabilities repayments</a>
+											<a data-id="Household expenses" class="dropdown-item addExpense">Household expenses</a>
+											<a data-id="Rental payments" class="dropdown-item addExpense">Rental payments</a>
+											<a data-id="Insurance" class="dropdown-item addExpense">Insurance</a>
+											<a data-id="Other" class="dropdown-item addExpense">Other</a>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+						<div class="expense-items-wrapper hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<label>EXPENSE TYPE</label>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-5">
+											<label>BALANCE</label>
+										</div>
+										<div class="col-md-4">
+											<label>&nbsp;</label>
+										</div>
+										<div class="col-md-3">
+											<label>&nbsp;</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="expense-items">
+							</div>
+						</div>
+						<div class="finance-form expense-finance-form hidden">
+							<div class="add-finance-wrapper">
+								<div class="row">
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>BALANCE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="expenseBalance" style="width: 100%;" class="form-control" placeholder="Balance"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>PAYMENT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">PER</label>
+												<div class="">
+													<select class="form-control" id="">
+														<option value="99">Month</option>
+														<option value="1">Fortnight</option>
+														<option value="2">Week</option>
+													</select>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<hr/>
+										<div class="button-wrapper">
+											<button id="expense-submit" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="button-wrapper">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="align-left">
+									<button class="slds-button slds-button_outline-brand normal">BACK</button>
+								</p>
+							</div>
+							<div class="col-md-6">
+								<p class="align-right">
+									<a href="overview.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					<!--Finance wrapper end-->
+						
+
+					<!-- Spouse page start -->
+					<div class="col-md-7 spouse-wrapper hidden">
+					<p><a class="hide-spouse">< Back</a>
+					</p>
+					<h2>Spouse</h2>
+					<p>Provide your spouses employment and income details</p>
+					<div id="form-wrapper">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-item">
+									<div class="slds-form-element">
+										<label class="">FIRST NAME</label>
+										<div class="slds-form-element__control">
+											<input type="text" id="FirstName" style="width: 100%;" class="form-control" placeholder="First Name"/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-item">
+									<div class="slds-form-element">
+										<label class="">LAST NAME</label>
+										<div class="slds-form-element__control">
+											<input type="text" id="LastName" style="width: 100%;" class="form-control" placeholder="Last Name"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-item">
+									<div class="slds-form-element">
+										<label class="">YOUR E_MAIL</label>
+										<div class="slds-form-element__control">
+											<input type="text" id="Email" style="width: 100%;" class="form-control" placeholder="Email"/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-7">
+										<div class="form-item">
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<label class="">DATE OF BIRTH</label>
+													<div class="">
+														<select class="form-control no-padding" id="">
+															<option selected>16/02/1980</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="form-item">
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<label class="">GENDER</label>
+													<div class="">
+														<select class="form-control no-padding" id="">
+															<option selected>Male</option>
+															<option>Female</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12" style="text-align: right;">
+								<a class="grey-anchor">Residential address different from main applicant</a>
+							</div>
+						</div>
+					</div>
+
+					<h2>Current employment situation?</h2>
+					<p>Does your spouse currently work full time, part time, sole trader or is a business owner?</p>
+					<div id="form-wrapper">
+					<div class="details-wrapper">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-item">
+									<div class="slds-form-element">
+										<div class="slds-form-element__control">
+											<label class="">CURRENTLY</label>
+											<div class="">
+												<select class="form-control" id="emp-status-select">
+													<option selected>select one</option>
+													<option>full time</option>
+													<option>part time</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="form-item">
+									<div class="slds-form-element">
+										<label class="">OCCUPATION</label>
+										<div class="slds-form-element__control">
+											<input type="text" id="Occupation" style="width: 100%;" class="form-control" placeholder="Occupation"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-item">
+							<div class="slds-form-element">
+								<label class="">COMPANY NAME</label>
+								<div class="slds-form-element__control">
+									<input type="text" id="CompanyName" style="width: 100%;" class="form-control" placeholder="Company Name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-item">
+							<div class="slds-form-element">
+								<label class="">ADDRESS</label>
+								<div class="slds-form-element__control">
+									<input type="text" id="Address" style="width: 100%;" class="form-control" placeholder="Address"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-item">
+							<h3>Whats the length of time you have been working here?</h3>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="slds-form-element">
+										<div class="slds-form-element__control">
+											<label class="">YEARS</label>
+											<div class="">
+
+												<select class="form-control" id="emp-years-select">
+													<option value="99">Select one</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="3">4</option>
+													<option value="3">5+</option>
+												</select>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div id="emp-months-select" class="slds-form-element hidden">
+										<div class="slds-form-element__control">
+											<label class="">MONTHS</label>
+											<div class="">
+												<select class="form-control">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="3">4</option>
+													<option value="3">5</option>
+													<option value="3">6</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-item">
+						<div class="row">
+							<div class="col-md-7">
+								<h3>Add spouses income</h3>
+							</div>
+							<div class="col-md-5">
+								<p class="align-right">
+									<div class="dropdown">
+										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+											<a data-id="Primary income (After tax)" class="dropdown-item addIncome2">Primary income (After tax)</a>
+											<a data-id="Bonus (After tax)" class="dropdown-item addIncome2">Bonus (After tax)</a>
+											<a data-id="Commission (After tax)" class="dropdown-item addIncome2">Commission (After tax)</a>
+											<a data-id="Life Overtime (After tax)" class="dropdown-item addIncome2">Life Overtime (After tax)</a>
+											<a data-id="Rental income" class="dropdown-item addIncome2">Rental income</a>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+
+						<div class="income2-items-wrapper hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<label>INCOME TYPE</label>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-5">
+											<label>BALANCE</label>
+										</div>
+										<div class="col-md-4">
+											<label>&nbsp;</label>
+										</div>
+										<div class="col-md-3">
+											<label>&nbsp;</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="income2-items">
+							</div>
+						</div>
+						<div class="finance-form income2-finance-form hidden">
+							<div class="add-finance-wrapper">
+								<div class="row">
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>BALANCE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="incomeBalance2" style="width: 100%;" class="form-control" placeholder="Balance"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>PAYMENT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">PER</label>
+												<div class="">
+													<select class="form-control" id="">
+														<option value="99">Month</option>
+														<option value="1">Fortnight</option>
+														<option value="2">Week</option>
+													</select>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="col-md-12">
+										<hr/>
+										<div class="button-wrapper">
+											<button id="income-submit2" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="form-item">
+						<div class="row">
+							<div class="col-md-7">
+								<h3>Add spouses additional liabilities</h3>
+								<p>These liabilities only apply to the spouse</p>
+							</div>
+							<div class="col-md-5">
+								<p class="align-right">
+									<div class="dropdown">
+										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+											<a data-id="Home loan" class="dropdown-item addLiability2">Home loan</a>
+											<a data-id="Motor Vehicle loan" class="dropdown-item addLiability2">Motor Vehicle loan</a>
+											<a data-id="Personal loan" class="dropdown-item addLiability2">Personal loan</a>
+											<a data-id="Unsecured loans" class="dropdown-item addLiability2">Unsecured loans</a>
+											<a data-id="Bank over draft" class="dropdown-item addLiability2">Bank over draft</a>
+											<a data-id="Other" class="dropdown-item addLiability2">Other</a>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+						<div class="liability2-items-wrapper hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<label>LIABILITY TYPE</label>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-5">
+											<label>BALANCE</label>
+										</div>
+										<div class="col-md-4">
+											<label>&nbsp;</label>
+										</div>
+										<div class="col-md-3">
+											<label>&nbsp;</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="liability2-items">
+							</div>
+						</div>
+						<div class="finance-form liability2-finance-form hidden">
+							<div class="add-finance-wrapper">
+								<div class="row">
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>BALANCE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="liabilityBalance2" style="width: 100%;" class="form-control" placeholder="Balance"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+
+										<div class="slds-form-element">
+											<label>PAYMENT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">PER</label>
+												<div class="">
+													<select class="form-control" id="">
+														<option value="99">Month</option>
+														<option value="1">Fortnight</option>
+														<option value="2">Week</option>
+													</select>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<hr/>
+										<div class="button-wrapper">
+											<button id="liability-submit2" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<hr/>
+
+
+					<div class="button-wrapper">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="align-left">
+									<button class="slds-button slds-button_outline-brand normal">BACK</button>
+								</p>
+							</div>
+							<div class="col-md-6">
+								<p class="align-right">
+									<a class="slds-button slds-button_outline-brand purple hide-spouse">DONE</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					</div>
+
+
+					</div>
+					<!-- Spouse page end -->
+
+					<div class="col-md-5 grey-side">
+						<h2>Summary</h2>
+						<p>The summary includes both primary and spouses finances</p>
+
+						<div class="row">
+							<div class="col-md-6">
+								Total Income
+							</div>
+							<div style="text-align: right;" class="col-md-6">
+								<a>$21,003.50</a>
+							</div>
+						</div>
+
+						<hr/>
+						<div class="row">
+							<div class="col-md-6">
+								Total expenses
+							</div>
+							<div style="text-align: right;" class="col-md-6">
+								<a>$0</a>
+							</div>
+						</div>
+						<hr/>
+						<div class="row">
+							<div class="col-md-6">
+								Total assets
+							</div>
+							<div style="text-align: right;" class="col-md-6">
+								<a>$100,000.50</a>
+							</div>
+						</div>
+						<hr/>
+						<div class="row">
+							<div class="col-md-6">
+								Total liabilities
+							</div>
+							<div style="text-align: right;" class="col-md-6">
+								<a>$130,000</a>
+							</div>
+						</div>
+						<hr/>
+						<div class="button-wrapper">
+							<div class="row">
+								<div class="col-md-12">
+									<button style="width: 100%;" class="slds-button slds-button_outline-brand blue show-spouse">ADD SPOUSES INCOME</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			initFinanceAdd(".addAsset", ".asset-finance-form", "#assetBalance", ".asset-items", "#asset-submit", ".asset-items-wrapper");
+			initFinanceAdd(".addLiability", ".liability-finance-form", "#liabilityBalance", ".liability-items", "#liability-submit", ".liability-items-wrapper");
+			initFinanceAdd(".addIncome", ".income-finance-form", "#incomeBalance", ".income-items", "#income-submit", ".income-items-wrapper");
+			initFinanceAdd(".addExpense", ".expense-finance-form", "#expenseBalance", ".expense-items", "#expense-submit", ".expense-items-wrapper");
+
+			initFinanceAdd(".addLiability2", ".liability2-finance-form", "#liabilityBalance2", ".liability2-items", "#liability-submit2", ".liability2-items-wrapper");
+			initFinanceAdd(".addIncome2", ".income2-finance-form", "#incomeBalance2", ".income2-items", "#income-submit2", ".income2-items-wrapper");
+
+			$("#emp-years-select").change(function () {
+				var obj = this;
+				if (parseInt($("#emp-years-select option:selected").text()) < 3) {
+					$("#emp-months-select").removeClass("hidden");
+				}
+			});
+
+
+			$(".show-spouse").each(function() {
+				$(this).on("click",
+					function() {
+						$(".finance-wrapper").addClass("hidden");
+						$(".spouse-wrapper").removeClass("hidden");
+					});
+			});
+			$(".hide-spouse").each(function() {
+				$(this).on("click",
+					function() {
+						$(".finance-wrapper").removeClass("hidden");
+						$(".spouse-wrapper").addClass("hidden");
+					});
+			});
+		});
+	</script>
+</body>
+</html>

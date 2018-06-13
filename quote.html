@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Quote</p>
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Verify</p>
+
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Done</p>
+
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 0%">
+									<span class="slds-assistive-text">Progress: 100%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h1>BOOM!!</h1>
+								<h2>You're one step closer to your Ford Mustang</h2>
+								<p>We've crunched the numbers & the best loan option for you is:</p>
+								<div id="form-wrapper">
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-12">
+												<label>YOUR REPAYMENTS</label>
+												<p class="big-text">
+													<span id="loan-amount">$324.33 </span> <span class="small-text">weekly</span>
+												</p>
+												<p class="font-25">6.54% interest rate</p>
+											</div>
+											
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="slds-form-element__control">
+											<div class="radio">
+												<label><input id="show-spouse" type="radio" name="optradio">Fortnightly</label>
+												<label><input type="radio" name="optradio">Monthly</label>
+											</div>
+										</div>
+									</div>
+									<hr/>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>LOAN AMOUNT</label>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<p class="font-25">$60,000.00</p>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>FEES</label>
+												<p>As most CTP premiums are included in the car registration... <a>read more</a></p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<p class="font-25">$450.00</p>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="row">
+											<div class="col-md-6">
+												<label>TOTAL LOAN AMOUNT</label>
+												<p>This total is based on your review you have been contionally approved.</p>
+											</div>
+											<div class="col-md-6" style="text-align: right;">
+												<p class="font-25">$60,450.00</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-12">
+												<a href="verify.html" style="width: 100%; padding: 20px;" class="slds-button slds-button_outline-brand purple">VERIFY YOUR INCOME & GET INSTANTLY APPROVED</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								<h2>Update your quote</h2>
+								<div class="form-item">
+									<div class="row">
+										<div class="col-md-6">
+											<label>LOAN AMOUNT</label>
+										</div>
+										<div class="col-md-6">
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<input type="text" id="LastName" value="$60,000.00" style="width: 100%;" class="form-control" placeholder="Loan amount"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr/>
+								
+								<div class="form-item">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<label>REPAYMENT</label>
+													<div class="">
+														<select class="form-control no-padding change-amount" id="">
+															<option selected>Weekly</option>
+															<option>Monthly</option>
+															<option>Fornightly</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<label>TERM</label>
+													<div class="">
+														<select class="form-control no-padding change-amount" id="">
+															<option>1 year</option>
+															<option>2 years</option>
+															<option>3 years</option>
+															<option>4 years</option>
+															<option selected>5 years</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="button-wrapper">
+									<div class="row">
+										<div class="col-md-12">
+											<button id="recalculate" style="width: 100%;" class="slds-button slds-button_outline-brand blue">RECALCULATE YOUR QUOTE</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+<script>
+	$(document).ready(function () {
+		var temp = false;
+		var amount = 648.66;
+
+
+		$("#recalculate").on("click",
+			function() {
+				if (temp) {
+					$("#loan-amount").html(amount / 2);
+				} else {
+					$("#loan-amount").html(amount);
+				}
+				temp = !temp;
+			});
+	});
+</script>
+</body>
+</html>

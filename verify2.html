@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Prepare for settlement</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Seller</p>
+
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Purchase details</p>
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Verify</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Direct debit</p>
+
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 75%">
+									<span class="slds-assistive-text">Progress: 0%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Verify yourself</h2>
+								<p>Provide more information about yourself</p>
+								<div id="form-wrapper">
+
+									<div class="form-item">
+										<label class="">IDENTIFICATION</label>
+										<div class="row">
+											<div class="col-md-9">
+												<label class="blue">VERIFIED</label>
+												<h4>Your drivers licence has been uploaded</h4>
+												<p><b>James Lewis</b></p>
+												<p><b>Licence no. 093492649</b></p>
+												<h5>445 St Kilda Street Elwood, 3184, Melbourne</h5>
+											</div>
+											<div class="col-md-3">
+												<button type="button" class="slds-button slds-button_outline-brand normal">Upload</button>
+											</div>
+										</div>
+									</div>
+									<hr />
+
+									<div class="form-item">
+										<label class="">INCOME</label>
+										<div class="row">
+											<div class="col-md-9">
+												<label class="orange">PENDING</label>
+												<h4>A payslip has been uploaded</h4>
+												<p><b>Bunnings group limited.</b></p>
+												<p><b>ABN 26 008 672 179</b></p>
+												<h5>1 Bay Street Port Melbourne, Melbourne, 3184</h5>
+											</div>
+											<div class="col-md-3">
+												<button type="button" class="slds-button slds-button_outline-brand normal">Upload</button>
+											</div>
+										</div>
+									</div>
+									<hr />
+
+									<div class="form-item">
+										<label class="">PROPERTY OWNERSHIP</label>
+										<div class="row">
+											<div class="col-md-9">
+												<label class="blue">VERIFIED</label>
+												<h4>A rates notice has been uploaded</h4>
+												<h5>445 St Kilda Street Elwood, 3184, Melbourne</h5>
+											</div>
+											<div class="col-md-3">
+												<button type="button" class="slds-button slds-button_outline-brand normal">Upload</button>
+											</div>
+										</div>
+									</div>
+									
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-12">
+												<a href="direct-debit.html" style="width: 100%; padding: 20px;" class="slds-button slds-button_outline-brand purple">SUBMIT YOUR DOCUMENTS</a>
+											</div>
+										</div>
+									</div>
+									<hr />
+
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<p class="align-left">
+													<button type="button" class="slds-button slds-button_outline-brand normal">BACK</button>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-md-5 grey-side">
+								<div class="form-item">
+									<div class="row">
+										<div class="col-md-12">
+											<label>REPAYMENTS</label>
+											<p class="big-text">
+												<span id="loan-amount">$324.33 </span> 
+											</p>
+											<p class="font-25">6.54% interest rate</p>
+										</div>
+											
+									</div>
+								</div>
+								<h5>Loan amount</h5>
+								<div class="row">
+									<div class="col-md-6">
+										Purchase price
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<a>$60,000.00</a>
+									</div>
+								</div>
+								<hr/>
+
+								<div class="row">
+									<div class="col-md-6">
+										- Less deposit
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<a>$9,500.00</a>
+									</div>
+								</div>
+								<hr/>
+
+								<div class="row">
+									<div class="col-md-6">
+										- Less trade in
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<a>$9,000.00</a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row">
+									<div class="col-md-6">
+										Insurance
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<a>$500.00</a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row">
+									<div class="col-md-6">
+										<h6>Total loan amount</h6>
+									</div>
+									<div style="text-align: right;" class="col-md-6">
+										<p class="font-25">$60,000.00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+		});
+	</script>
+</body>
+</html>

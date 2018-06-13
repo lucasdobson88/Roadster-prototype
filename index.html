@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Personal Info</p>
+
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Living situation</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Employment</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Finances</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Confirm</p>
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-progress__marker">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-progress__marker">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 6 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 0%">
+									<span class="slds-assistive-text">Progress: 0%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Car details</h2>
+								<div id="form-wrapper">
+									<div class="form-item">
+										<h3>Do you know the car you want to buy?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="">
+													<select class="form-control" id="car-decision">
+														<option selected>I know the car I want to buy</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<h3>Whats the condition of the car?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="" for="address">CONDITION</label>
+												<div class="">
+													<select class="form-control" id="select-01">
+														<option selected>New car</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="make-wrapper">
+										<div id="car-make" class="form-item hidden">
+											<h3>Whats the make of your car?</h3>
+											<div class="slds-form-element">
+												<label class="" for="address">MAKE</label>
+												<div class="slds-form-element__control">
+													<button id="select-value" type="disabled" class="slds-button slds-button_neutral select-button">Ford</button> <a id="make-edit">edit</a>
+												</div>
+											</div>
+										</div>
+
+										<div id="car-make-select" class="form-item">
+											<h3>Whats the make of your car?</h3>
+											<div class="slds-form-element">
+												<label class="" for="address">MAKE</label>
+												<div class="slds-form-element__control">
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Lada</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Bmw</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Ford</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Holden</button>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Honda</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Hyandai</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Isuzu</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Jeep</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="year-wrapper hidden">
+										<div id="car-year" class="form-item hidden">
+											<h3>Whats the year of your car?</h3>
+											<div class="slds-form-element">
+												<label class="" for="address">YEAR</label>
+												<div class="slds-form-element__control">
+													<button id="select-value" type="disabled" class="slds-button slds-button_neutral select-button">Ford</button>
+													<a id="year-edit">edit</a>
+												</div>
+											</div>
+										</div>
+
+										<div id="car-year-select" class="form-item">
+											<h3>Whats the year of your car?</h3>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2018</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2017</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2016</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2015</button>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2014</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2013</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2012</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">2011</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="model-wrapper hidden">
+										<div id="car-model" class="form-item hidden">
+											<h3>Whats the model of your car?</h3>
+											<div class="slds-form-element">
+												<label class="" for="address">YEAR</label>
+												<div class="slds-form-element__control">
+													<button id="select-value" type="disabled" class="slds-button slds-button_neutral select-button">Ford</button>
+													<a id="model-edit">edit</a>
+												</div>
+											</div>
+										</div>
+
+										<div id="car-model-select" class="form-item">
+											<h3>Whats the model of your car?</h3>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Koga</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Escape</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Everest</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Falcon</button>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Fiesta</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Focus</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Mustang</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button">Ranger</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="body-type-wrapper hidden">
+										<div id="car-body-type" class="form-item hidden">
+											<h3>Whats the model of your car?</h3>
+											<div class="slds-form-element">
+												<label class="" for="address">YEAR</label>
+												<div class="slds-form-element__control">
+													<button id="select-value" type="disabled" class="slds-button slds-button_neutral select-button">Ford</button>
+													<a id="body-type-edit">edit</a>
+												</div>
+											</div>
+										</div>
+
+										<div id="car-body-type-select" class="form-item">
+											<h3>What is the body type of your car?</h3>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button auto-width">2 dr Convertible</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button auto-width">4 door sedan</button>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button auto-width">Ute</button>
+															<button type="disabled" class="make-select slds-button slds-button_neutral select-button auto-width">Wagon</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="type-wrapper hidden">
+										<div class="form-item">
+											<h3>What is the type of the car?</h3>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<label class="" for="address">TYPE</label>
+													<div class="">
+														<select class="form-control" id="select-type">
+															<option selected>Select type</option>
+															<option>2 dr turbo FM 235kw Semi-auto</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="options-wrapper hidden">
+										<div id="car-options" class="form-item">
+											<h3>Do you know the factory / dealer options that are fitted to your car?</h3>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<button type="button" data-toggle="modal" data-target="#optionsModal" class="slds-button slds-button_outline-brand purple">ADD</button>
+													<button type="button" class="slds-button slds-button_outline-brand normal">SKIP</button>
+												</div>
+											</div>
+										</div>
+
+										<div id="selected-options" class="form-item hidden">
+											<h3>Do you know the factory / dealer options that are fitted to your car?</h3>
+											<p class="blue-text">
+												Sunroof - Electric
+											</p>
+											<p class="blue-text">
+												GPS (Satellite navigation)
+											</p>
+											<p class="blue-text">
+												Paint - Metallic
+											</p>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<button type="button" data-toggle="modal" data-target="#optionsModal" class="slds-button slds-button_outline-brand purple">EDIT FACTORY OPTIONS</button>
+													<button type="button" id="clear-options" class="slds-button slds-button_outline-brand normal">CLEAR</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								<div class="amount-wrapper hidden">
+									<div class="form-item">
+										<h3>What is the purchase price of the car?</h3>
+										<div class="slds-form-element">
+											<label class="" for="address">PURCHASE PRICE</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="PurchasePrice" style="width: 100%;" class="form-control" placeholder="Purchase price" />
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<h3>Whats the loan amount you want to borrow?</h3>
+										<div class="slds-form-element">
+											<label class="" for="address">LOAN AMOUNT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="LoanAmount" style="width: 100%;" class="form-control" placeholder="Loan amount" />
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<h3>How many kilometers has the car done?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="" for="address">DISTANCE</label>
+												<div class="">
+													<select class="form-control" id="residency-status">
+														<option selected>0 - 5000</option>
+														<option>5000 - 200000</option>
+														<option>200000+</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<h3>What will this car be used a majority of time for?</h3>
+										<div class="slds-form-element">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="personal-use-checkbox">
+												<label class="form-check-label" for="exampleCheck1">PERSONAL USE</label>
+											</div>
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="business-use-checkbox">
+												<label class="form-check-label" for="exampleCheck1">BUSINESS USE</label>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<p class="align-left">
+													<button class="slds-button slds-button_outline-brand normal">BACK</button>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p class="align-right">
+													<a href="personal.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								<label>HELPFUL HINTS</label>
+								<p>By providing at least two years or more of your living situation helps determine approval of your loan.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Select options</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Sunroof - Electric</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">GPS (Satelite navigation)</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Paint - Metallic</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Sunroof - Electric</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">GPS (Satelite navigation)</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Paint - Metallic</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" id="select-options" class="slds-button slds-button_outline-brand purple">Done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+	<script src="Content/js/site.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			initButtonSelection("#car-make", "#car-make-select", ".make-select", "#make-edit", true, ".year-wrapper");
+			initButtonSelection("#car-year", "#car-year-select", ".make-select", "#year-edit", true, ".model-wrapper");
+			initButtonSelection("#car-model", "#car-model-select", ".make-select", "#model-edit", true, ".body-type-wrapper");
+			initButtonSelection("#car-body-type", "#car-body-type-select", ".make-select", "#body-type-edit", true, ".type-wrapper");
+			modalControl("#car-options", "#selected-options", "#clear-options", "#select-options", true, ".amount-wrapper");
+
+			selectNext("#select-type", ".options-wrapper");
+		});
+	</script>
+</body>
+</html>

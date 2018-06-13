@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css" />
+	<link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="Content/css/site.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class=container>
+				<div class="row header-top">
+					<div class="col-md-6 inline-block">
+						<img src="Content/img/logo.jpg" class="logo" />
+						<h2>Making an application</h2>
+					</div>
+					<div class="col-md-6 button-wrapper">
+						<p>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+						</p>
+					</div>
+				</div>
+
+				<div clas="row header-progress">
+					<div class="col-md-12">
+						<div class="slds-progress progress-top">
+							<ol class="slds-progress__list">
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Car</p>
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Personal Info</p>
+
+
+								</li>
+								<li class="slide-header slide-header-active">
+									<p class="progress-text">Living situation</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Employment</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Finances</p>
+
+								</li>
+								<li class="slide-header">
+									<p class="progress-text">Confirm</p>
+								</li>
+							</ol>
+						</div>
+
+						<div class="slds-progress">
+							<ol class="slds-progress__list">
+								<li class="slds-progress__item slds-is-completed">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-completed">
+
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item slds-is-active">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 3 - Active</span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 4 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 5 </span>
+									</button>
+								</li>
+								<li class="slds-progress__item">
+
+									<button class="slds-button slds-progress__marker">
+										<span class="slds-assistive-text">Step 6 </span>
+									</button>
+								</li>
+							</ol>
+							<div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" role="progressbar">
+								<span class="slds-progress-bar__value" style="width: 40%">
+									<span class="slds-assistive-text">Progress: 50%</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class=container>
+				<div class="row justify-content-end">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Whats your living situation?</h2>
+								<p>You must provide at least 2 years history</p>
+
+								<div id="form-wrapper">
+									<div class="form-item">
+										<h3>Whats your current residency address?</h3>
+										<div class="slds-form-element">
+											<label class="" for="address">ADDRESS</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="address" style="width: 100%;" class="form-control" placeholder="Address" />
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<h3>Whats your residency status?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="">
+													<select class="form-control" id="residency-status">
+														<option selected>Own house</option>
+														<option>Renting</option>
+														<option>Boarding</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<h3>The time you have been at this address?</h3>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="slds-form-element">
+													<div class="slds-form-element__control">
+														<label class="">YEARS</label>
+														<div class="">
+
+															<select class="form-control" id="emp-years-select">
+																<option value="99">Select one</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="3">4</option>
+																<option value="3">5+</option>
+															</select>
+														</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div id="emp-months-select" class="slds-form-element hidden">
+													<div class="slds-form-element__control">
+														<label class="">MONTHS</label>
+														<div class="">
+															<select class="form-control">
+																<option value="1" selected>1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="3">4</option>
+																<option value="3">5</option>
+																<option value="3">6</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-item">
+										<h3>Whats your residency status?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="" for="address">CURRENTLY</label>
+												<div class="">
+													<select class="form-control" id="select-01">
+														<option selected>Ausatralian citizen</option>
+														<option>Visa</option>
+														<option>Permanent resident</option>
+														<option>Other</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="button-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<p class="align-left">
+													<button class="slds-button slds-button_outline-brand normal">BACK</button>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p class="align-right">
+													<a href="employment.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="col-md-5 grey-side">
+								<label>HELPFUL HINTS</label>
+								<p>By providing at least two years or more of your living situation helps determine approval of your loan.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="container">
+
+			</div>
+		</div>
+
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="Content/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function () {
+
+		$("#emp-years-select").change(function () {
+			var obj = this;
+			if (parseInt($("#emp-years-select option:selected").text()) < 3) {
+				$("#emp-months-select").removeClass("hidden");
+			}
+		});
+	});
+</script>
+</body>
+</html>
