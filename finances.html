@@ -468,8 +468,8 @@
 								</p>
 							</div>
 							<div class="col-md-6">
-								<p class="align-right">
-									<a href="overview.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
+								<p class="align-right remove-button">
+									<a data-toggle="modal" data-target="#optionsModal" class="slds-button slds-button_outline-brand purple">NEXT</a>
 								</p>
 							</div>
 						</div>
@@ -936,7 +936,26 @@
 
 	</div>
 
-
+<!-- Modal -->
+<div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Add Spousal income?</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				
+			</div>
+			<div class="modal-footer">
+				<a data-dismiss="modal" id="show-spouse-info" class="slds-button slds-button_outline-brand purple show-spouse">YES</a>
+				<a id="go-to-next-page" data-dismiss="modal" class="slds-button slds-button_outline-brand normal">NO</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -968,6 +987,7 @@
 					function() {
 						$(".finance-wrapper").addClass("hidden");
 						$(".spouse-wrapper").removeClass("hidden");
+						$(".remove-button").html("<a href='overview.html' class='slds-button slds-button_outline-brand purple'>NEXT</a>");
 					});
 			});
 			$(".hide-spouse").each(function() {
@@ -977,6 +997,15 @@
 						$(".spouse-wrapper").addClass("hidden");
 					});
 			});
+
+			$("#go-to-next-page").on("click",
+				function() {
+					window.location.href = 'overview.html';
+				});
+
+			$("#show-spouse-info").on("click", function() {
+				$(".remove-button").html("<a href='overview.html' class='slds-button slds-button_outline-brand purple'>NEXT</a>");
+			})
 		});
 	</script>
 </body>
