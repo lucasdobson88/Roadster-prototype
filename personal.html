@@ -15,12 +15,11 @@
 				<div class="row header-top">
 					<div class="col-md-6 inline-block">
 						<img src="Content/img/logo.jpg" class="logo" />
-						<h2>Making an application</h2>
+						<h2>Apply</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
 						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
 						</p>
 					</div>
 				</div>
@@ -30,15 +29,15 @@
 						<div class="slds-progress progress-top">
 							<ol class="slds-progress__list">
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Car</p>
+									<p class="progress-text">Car Details</p>
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Personal Info</p>
+									<p class="progress-text">Your Details</p>
 
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Living situation</p>
+									<p class="progress-text">Living Situation</p>
 
 								</li>
 								<li class="slide-header">
@@ -50,7 +49,7 @@
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Confirm</p>
+									<p class="progress-text">Submit</p>
 								</li>
 							</ol>
 						</div>
@@ -112,7 +111,7 @@
 						<div class="row">
 							<div class="col-md-7">
 							<h2>Tell us about yourself</h2>
-							<p>Your name, email, drivers licence and if your adding a second applicant</p>
+							<p>Your details must match your passport or driver's license</p>
 								<div id="form-wrapper">
 									<!--<div class="form-item">
 										<h3>Do you know the car you want to buy?</h3>
@@ -153,7 +152,7 @@
 										<div class="col-md-6">
 											<div class="form-item">
 												<div class="slds-form-element">
-													<label class="">YOUR E_MAIL</label>
+													<label class="">EMAIL</label>
 													<div class="slds-form-element__control">
 														<input type="text" id="Email" style="width: 100%;" class="form-control" placeholder="Email" />
 													</div>
@@ -169,7 +168,14 @@
 																<label class="">DATE OF BIRTH</label>
 																<div class="">
 																	<select class="form-control no-padding" id="">
-																		<option selected>16/02/1980</option>
+																		<option selected>01/01/1980</option>
+																		<option>02/01/1980</option>
+																		<option>03/01/1980</option>
+																		<option>04/01/1980</option>
+																		<option>05/01/1980</option>
+																		<option>06/01/1980</option>
+																		<option>07/01/1980</option>
+																		<option>08/01/1980</option>
 																	</select>
 																</div>
 															</div>
@@ -199,7 +205,7 @@
 										<div class="col-md-5">
 											<div class="form-item">
 												<div class="slds-form-element">
-													<label class="">DRIVERS LICENCE</label>
+													<label class="">LICENCE NUMBER</label>
 													<div class="slds-form-element__control">
 														<input type="text" id="LicenceNo" style="width: 100%;" class="form-control" placeholder="Licence Number" />
 													</div>
@@ -216,7 +222,14 @@
 																<div class="">
 																	<select class="form-control no-padding" id="state-select">
 																		<option selected>Select one</option>
-																		<option>Victoria</option>
+																		<option>VIC</option>
+																		<option>NSW</option>
+																		<option>ACT</option>
+																		<option>QLD</option>
+																		<option>NT</option>
+																		<option>WA</option>
+																		<option>SA</option>
+																		<option>TAS</option>
 																	</select>
 																</div>
 															</div>
@@ -227,11 +240,13 @@
 													<div class="form-item">
 														<div class="slds-form-element">
 															<div class="slds-form-element__control">
-																<label class="">TYPE</label>
+																<label class="">LICENCE TYPE</label>
 																<div class="">
 																	<select class="form-control no-padding" id="type-select">
 																		<option selected>Select one</option>
-																		<option>FULL</option>
+																		<option>Full</option>
+																		<option>Probationary</option>
+																		<option>Learner</option>
 																	</select>
 																</div>
 															</div>
@@ -245,37 +260,29 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="form-item">
-
-											<div class="slds-form-element">
-												<div class="form-check">
-													<input type="checkbox" class="form-check-input" id="no-licence">
-													<label class="form-check-label" for="exampleCheck1">I don't have an Australian drivers licence</label>
-												</div>
-											</div>
 										</div>
 									</div>
 								</div>
 									
 								<div class="other-wrapper hidden">
 									<div class="form-item">
-										<h3>Whats your mobile number?</h3>
+										<h3>What's your mobile number?</h3>
 										<div class="slds-form-element">
-											<label class="" for="address">MOBILE</label>
 											<div class="slds-form-element__control">
-												<input type="text" id="Mobile" style="width: 100%;" class="form-control" placeholder="Mobile" />
+												<input type="text" id="Mobile" style="width: 100%;" class="form-control" placeholder="" />
 											</div>
 										</div>
 									</div>
 										
 									<div class="form-item">
-										<h3>Whats your relationship status?</h3>
+										<h3>What's your marital status?</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
-												<label class="">RELATIONSHIP</label>
 												<div class="">
 													<select class="form-control no-padding" id="">
 														<option selected>Married</option>
 														<option>Single</option>
+														<option>Defacto</option>
 													</select>
 												</div>
 											</div>
@@ -283,8 +290,7 @@
 									</div>
 										
 									<div class="form-item">
-										<h3>Dependents</h3>
-										<p>Number of dependents</p>
+										<h3>How many dependants do you have?</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
 												<div class="input-group">
@@ -293,7 +299,7 @@
 															<span class="glyphicon glyphicon-minus"></span>
 														</button>
 													</span>
-													<input type="text" name="quant[1]" class="form-control input-number plusminus" value="1" min="1" max="10">
+													<input type="text" name="quant[1]" class="form-control input-number plusminus" value="0" min="0" max="10">
 													<span class="input-group-btn">
 														<button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
 															<span class="glyphicon glyphicon-plus"></span>
@@ -305,7 +311,7 @@
 									</div>
 										
 									<div class="form-item">
-										<h3>Is there a second applicant applying?</h3>
+										<h3>Do you want to add a second applicant to the loan?</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
 												<div class="radio">
@@ -362,9 +368,7 @@
 
 							</div>
 							<div class="col-md-5 grey-side">
-								<p>1. Free directories: directories are perfect for customers that are searching for a particular topic.</p>
-								<p>What's great about them is that you only have to post once and they are good for long periods of time. It saves a lot of your time when you don't have to resubmit your information every week or every month.
-								The bad news is most of your traffic won't come from here. I still feel it is worth it to get your link out there.</p>
+								<p>Your details must match your passport or driver's license.</p>
 							</div>
 						</div>
 

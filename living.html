@@ -14,12 +14,11 @@
 				<div class="row header-top">
 					<div class="col-md-6 inline-block">
 						<img src="Content/img/logo.jpg" class="logo" />
-						<h2>Making an application</h2>
+						<h2>Apply</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
 						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
 						</p>
 					</div>
 				</div>
@@ -29,15 +28,15 @@
 						<div class="slds-progress progress-top">
 							<ol class="slds-progress__list">
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Car</p>
+									<p class="progress-text">Car Details</p>
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Personal Info</p>
+									<p class="progress-text">Your Details</p>
 
 
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Living situation</p>
+									<p class="progress-text">Living Situation</p>
 
 								</li>
 								<li class="slide-header">
@@ -49,7 +48,7 @@
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Confirm</p>
+									<p class="progress-text">Submit</p>
 								</li>
 							</ol>
 						</div>
@@ -110,29 +109,30 @@
 					<div class="col-md-10">
 						<div class="row">
 							<div class="col-md-7">
-								<h2>Whats your living situation?</h2>
-								<p>You must provide at least 2 years history</p>
-
+								<h2>Living Situation</h2>
+									<p>You must provide 2 year history of your living situation</p>
 								<div id="form-wrapper">
 									<div class="form-item">
 										<h3>What's your current home address?</h3>
 										<div class="slds-form-element">
-											<label class="" for="address">ADDRESS</label>
 											<div class="slds-form-element__control">
-												<input type="text" id="address" style="width: 100%;" class="form-control" placeholder="Address" />
+												<input type="text" id="address" style="width: 100%;" class="form-control" placeholder="Start typing" />
 											</div>
 										</div>
 									</div>
 
 									<div class="form-item">
-										<h3>Do you rent or own this property?</h3>
+										<h3>What is your current living situation?</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
 												<div class="">
 													<select class="form-control" id="residency-status">
-														<option selected>Own house</option>
-														<option>Renting</option>
-														<option>Boarding</option>
+														<option selected>I own my house (outright)</option>
+														<option>I own my house (mortgage)</option>
+														<option>I'm renting</option>
+														<option>I'm renting</option>
+														<option>I pay board</option>
+														<option>I live rent free</option>
 													</select>
 												</div>
 											</div>
@@ -140,7 +140,7 @@
 									</div>
 
 									<div class="form-item">
-										<h3>The time you have been at this address?</h3>
+										<h3>How long have you lived at this address?</h3>
 										<div class="row">
 											<div class="col-md-6">
 												<div class="slds-form-element">
@@ -150,6 +150,7 @@
 
 															<select class="form-control" id="emp-years-select">
 																<option value="99">Select one</option>
+																<option value="0">0</option>
 																<option value="1">1</option>
 																<option value="2">2</option>
 																<option value="3">3</option>
@@ -167,7 +168,8 @@
 														<label class="">MONTHS</label>
 														<div class="">
 															<select class="form-control">
-																<option value="1" selected>1</option>
+																<option value="0" selected>0</option>
+																<option value="1">1</option>
 																<option value="2">2</option>
 																<option value="3">3</option>
 																<option value="3">4</option>
@@ -185,10 +187,9 @@
 										<h3>Whats your residency status?</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
-												<label class="" for="address">CURRENTLY</label>
 												<div class="">
 													<select class="form-control" id="select-01">
-														<option selected>Ausatralian citizen</option>
+														<option selected>Australian citizen</option>
 														<option>Visa</option>
 														<option>Permanent resident</option>
 														<option>Other</option>
@@ -217,8 +218,8 @@
 
 							</div>
 							<div class="col-md-5 grey-side">
-								<label>HELPFUL HINTS</label>
-								<p>By providing at least two years or more of your living situation helps determine approval of your loan.</p>
+								<label>REMEMBER</label>
+								<p>You must provide 2 year history of your living situation</p>
 							</div>
 						</div>
 

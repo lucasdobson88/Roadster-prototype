@@ -15,12 +15,11 @@
 				<div class="row header-top">
 					<div class="col-md-6 inline-block">
 						<img src="Content/img/logo.jpg" class="logo" />
-						<h2>Making an application</h2>
+						<h2>Apply</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
 						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
 						</p>
 					</div>
 				</div>
@@ -30,15 +29,15 @@
 						<div class="slds-progress progress-top">
 							<ol class="slds-progress__list">
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Car</p>
+									<p class="progress-text">Car Details</p>
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Personal Info</p>
+									<p class="progress-text">Your Details</p>
 
 
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Living situation</p>
+									<p class="progress-text">Living Situation</p>
 
 								</li>
 								<li class="slide-header slide-header-active">
@@ -50,7 +49,7 @@
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Confirm</p>
+									<p class="progress-text">Submit</p>
 								</li>
 							</ol>
 						</div>
@@ -113,14 +112,13 @@
 					<!--Finance wrapper start-->
 					<div class="col-md-7 finance-wrapper">
 					<h2>What are your finances?</h2>
-					<p>A list of your assets, liabilities, income, expenses</p>
+					<p>Must include all your household finances</p>
 					<div id="form-wrapper">
 					<div class="assets-wrapper">
 						<div class="form-item">
 							<div class="row">
 								<div class="col-md-7">
-									<h3>Add your assets</h3>
-									<p>Include your spouses assets also</p>
+									<h3>Assets</h3>
 								</div>
 								<div class="col-md-5">
 									<p class="align-right">
@@ -129,10 +127,16 @@
 												Add
 											</button>
 											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-												<a data-id="Cash / Bank" class="dropdown-item addAsset">Cash / Bank</a>
-												<a data-id="House" class="dropdown-item addAsset">House</a>
-												<a data-id="Supannuation" class="dropdown-item addAsset">Supannuation</a>
-												<a data-id="Life insurance" class="dropdown-item addAsset">Life insurance</a>
+												<a data-id="Property (Residence)" class="dropdown-item addAsset">Property (Residence)</a>
+												<a data-id="Property (Investment)" class="dropdown-item addAsset">Property (Investment)</a>
+												<a data-id="Cash" class="dropdown-item addAsset">Cash</a>
+												<a data-id="Motor Vehicles" class="dropdown-item addAsset">Motor Vehicles</a>
+												<a data-id="Plant & Equipment" class="dropdown-item addAsset">Plant & Equipment</a>
+												<a data-id="Superannuation" class="dropdown-item addAsset">Superannuation</a>
+												<a data-id="Boats, Motorbikes & Trucks" class="dropdown-item addAsset">Boats, Motorbikes & Trucks</a>
+												<a data-id="Shares, Trust & Funds" class="dropdown-item addAsset">Shares, Trust & Funds</a>
+												<a data-id="Life Insurance" class="dropdown-item addAsset">Life Insurance</a>
+												<a data-id="Business Equities" class="dropdown-item addAsset">Business Equities</a>
 											</div>
 										</div>
 									</p>
@@ -147,7 +151,7 @@
 									<div class="col-md-6">
 										<div class="row">
 											<div class="col-md-5">
-												<label>AMOUNT</label>
+												<label>VALUE</label>
 											</div>
 											<div class="col-md-4">
 												<label>&nbsp;</label>
@@ -167,9 +171,9 @@
 										<div class="col-md-8">
 
 											<div class="slds-form-element">
-												<label>AMOUNT</label>
+												<label>VALUE</label>
 												<div class="slds-form-element__control">
-													<input type="text" id="assetBalance" style="width: 100%;" class="form-control" placeholder="Amount"/>
+													<input type="text" id="assetBalance" style="width: 100%;" class="form-control" placeholder="$"/>
 												</div>
 											</div>
 										</div>
@@ -192,8 +196,7 @@
 					<div class="form-item">
 						<div class="row">
 							<div class="col-md-7">
-								<h3>Add your liabilities</h3>
-								<p>Include your spouses liabilities</p>
+								<h3>Liabilities</h3>
 							</div>
 							<div class="col-md-5">
 								<p class="align-right">
@@ -243,16 +246,16 @@
 										<div class="slds-form-element">
 											<label>BALANCE</label>
 											<div class="slds-form-element__control">
-												<input type="text" id="liabilityBalance" style="width: 100%;" class="form-control" placeholder="Balance"/>
+												<input type="text" id="liabilityBalance" style="width: 100%;" class="form-control" placeholder="$"/>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-4">
 
 										<div class="slds-form-element">
-											<label>PAYMENT</label>
+											<label>REPAYMENTS</label>
 											<div class="slds-form-element__control">
-												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="Payment"/>
+												<input type="text" id="Payment" style="width: 100%;" class="form-control" placeholder="$"/>
 											</div>
 										</div>
 									</div>
@@ -288,7 +291,7 @@
 					<div class="form-item">
 						<div class="row">
 							<div class="col-md-7">
-								<h3>Add your income</h3>
+								<h3>Income</h3>
 							</div>
 							<div class="col-md-5">
 								<p class="align-right">
@@ -300,8 +303,10 @@
 											<a data-id="Primary income (After tax)" class="dropdown-item addIncome">Primary income (After tax)</a>
 											<a data-id="Bonus (After tax)" class="dropdown-item addIncome">Bonus (After tax)</a>
 											<a data-id="Commission (After tax)" class="dropdown-item addIncome">Commission (After tax)</a>
-											<a data-id="Life Overtime (After tax)" class="dropdown-item addIncome">Life Overtime (After tax)</a>
+											<a data-id="Overtime (After tax)" class="dropdown-item addIncome">Overtime (After tax)</a>
 											<a data-id="Rental income" class="dropdown-item addIncome">Rental income</a>
+											<a data-id="Government benefits" class="dropdown-item addIncome">Government benefits</a>
+											<a data-id="Other" class="dropdown-item addIncome">Other</a>
 										</div>
 									</div>
 								</p>
@@ -337,7 +342,7 @@
 										<div class="slds-form-element">
 											<label>AMOUNT</label>
 											<div class="slds-form-element__control">
-												<input type="text" id="incomeBalance" style="width: 100%;" class="form-control" placeholder="Amount"/>
+												<input type="text" id="incomeBalance" style="width: 100%;" class="form-control" placeholder="$"/>
 											</div>
 										</div>
 									</div>
@@ -373,8 +378,7 @@
 					<div class="form-item">
 						<div class="row">
 							<div class="col-md-7">
-								<h3>Add your expenses</h3>
-								<p>Include your spouses expenses also</p>
+								<h3>Expenses</h3>
 							</div>
 							<div class="col-md-5">
 								<p class="align-right">
@@ -383,11 +387,11 @@
 											Add
 										</button>
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-											<a data-id="Liabilities repayments" class="dropdown-item addExpense">Liabilities repayments</a>
-											<a data-id="Household expenses" class="dropdown-item addExpense">Household expenses</a>
-											<a data-id="Rental payments" class="dropdown-item addExpense">Rental payments</a>
-											<a data-id="Insurance" class="dropdown-item addExpense">Insurance</a>
-											<a data-id="Other" class="dropdown-item addExpense">Other</a>
+											<a data-id="Rent" class="dropdown-item addExpense">Rent</a>
+											<a data-id="Household Expenses" class="dropdown-item addExpense">Household Expenses</a>
+											<a data-id="Vehicle Running Costs" class="dropdown-item addExpense">Vehicle Running Costs</a>
+											<a data-id="Childcare & Education" class="dropdown-item addExpense">Childcare & Education</a>
+											<a data-id="Other Expenses" class="dropdown-item addExpense">Other Expenses</a>
 										</div>
 									</div>
 								</p>
@@ -423,7 +427,7 @@
 										<div class="slds-form-element">
 											<label>AMOUNT</label>
 											<div class="slds-form-element__control">
-												<input type="text" id="expenseBalance" style="width: 100%;" class="form-control" placeholder="Amount"/>
+												<input type="text" id="expenseBalance" style="width: 100%;" class="form-control" placeholder="$"/>
 											</div>
 										</div>
 									</div>
@@ -479,7 +483,7 @@
 					<div class="col-md-7 spouse-wrapper hidden">
 					<p><a class="hide-spouse">< Back</a>
 					</p>
-					<h2>Spouse</h2>
+					<h2>Add your spouse</h2>
 					<p>Provide your spouses employment and income details</p>
 					<div id="form-wrapper">
 						<div class="row">
@@ -509,7 +513,7 @@
 							<div class="col-md-6">
 								<div class="form-item">
 									<div class="slds-form-element">
-										<label class="">YOUR E_MAIL</label>
+										<label class="">EMAIL</label>
 										<div class="slds-form-element__control">
 											<input type="text" id="Email" style="width: 100%;" class="form-control" placeholder="Email"/>
 										</div>
@@ -553,13 +557,12 @@
 
 						<div class="row">
 							<div class="col-md-12" style="text-align: right;">
-								<a class="grey-anchor">Residential address different from main applicant</a>
+								<p><a class="grey-anchor">Residential address different from main applicant</a></p>
 							</div>
 						</div>
 					</div>
 
-					<h2>Current employment situation?</h2>
-					<p>Does your spouse currently work full time, part time, sole trader or is a business owner?</p>
+					<h2>Current Employment</h2>
 					<div id="form-wrapper">
 					<div class="details-wrapper">
 						<div class="row">
@@ -567,12 +570,19 @@
 								<div class="form-item">
 									<div class="slds-form-element">
 										<div class="slds-form-element__control">
-											<label class="">CURRENTLY</label>
+											<label class="">TYPE</label>
 											<div class="">
 												<select class="form-control" id="emp-status-select">
 													<option selected>select one</option>
-													<option>full time</option>
-													<option>part time</option>
+													<option>Casual</option>
+														<option>Full time</option>
+														<option>Part time</option>
+														<option>Self Employed</option>
+														<option>Contractor</option>
+														<option>Pensioner</option>
+														<option>Self Funded Retiree</option>
+														<option>Unemployed</option>
+														<option>Other</option>
 												</select>
 											</div>
 										</div>
@@ -603,7 +613,7 @@
 
 						<div class="form-item">
 							<div class="slds-form-element">
-								<label class="">ADDRESS</label>
+								<label class="">COMPANY ADDRESS</label>
 								<div class="slds-form-element__control">
 									<input type="text" id="Address" style="width: 100%;" class="form-control" placeholder="Address"/>
 								</div>
@@ -611,7 +621,7 @@
 						</div>
 
 						<div class="form-item">
-							<h3>Whats the length of time you have been working here?</h3>
+							<h3>How long have they worked there?</h3>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="slds-form-element">
@@ -652,11 +662,14 @@
 							</div>
 						</div>
 					</div>
+					
+					
+					<h2>Finances</h2>
 
 					<div class="form-item">
 						<div class="row">
 							<div class="col-md-7">
-								<h3>Add spouses income</h3>
+								<h3>Income</h3>
 							</div>
 							<div class="col-md-5">
 								<p class="align-right">
@@ -668,8 +681,10 @@
 											<a data-id="Primary income (After tax)" class="dropdown-item addIncome2">Primary income (After tax)</a>
 											<a data-id="Bonus (After tax)" class="dropdown-item addIncome2">Bonus (After tax)</a>
 											<a data-id="Commission (After tax)" class="dropdown-item addIncome2">Commission (After tax)</a>
-											<a data-id="Life Overtime (After tax)" class="dropdown-item addIncome2">Life Overtime (After tax)</a>
+											<a data-id="Overtime (After tax)" class="dropdown-item addIncome2">Overtime (After tax)</a>
 											<a data-id="Rental income" class="dropdown-item addIncome2">Rental income</a>
+											<a data-id="Government benefits" class="dropdown-item addIncome2">Government benefits</a>
+											<a data-id="Other" class="dropdown-item addIncome2">Other</a>
 										</div>
 									</div>
 								</p>
@@ -743,7 +758,7 @@
 					<div class="form-item">
 						<div class="row">
 							<div class="col-md-7">
-								<h3>Add spouses additional liabilities</h3>
+								<h3>Additional liabilities</h3>
 								<p>These liabilities only apply to the spouse</p>
 							</div>
 							<div class="col-md-5">

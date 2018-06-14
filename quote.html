@@ -14,12 +14,11 @@
 				<div class="row header-top">
 					<div class="col-md-6 inline-block">
 						<img src="Content/img/logo.jpg" class="logo" />
-						<h2>Making an application</h2>
+						<h2>Quote</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
 						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
 						</p>
 					</div>
 				</div>
@@ -29,7 +28,7 @@
 						<div class="slds-progress progress-top">
 							<ol class="slds-progress__list">
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Quote</p>
+									<p class="progress-text">Personalised Quote</p>
 								</li>
 								<li class="slide-header">
 									<p class="progress-text">Verify</p>
@@ -37,7 +36,7 @@
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Done</p>
+									<p class="progress-text">Get Approved</p>
 
 								</li>
 							</ol>
@@ -81,16 +80,15 @@
 					<div class="col-md-10">
 						<div class="row">
 							<div class="col-md-7">
-								<h1>BOOM!!</h1>
-								<h2>You're one step closer to your Ford Mustang</h2>
-								<p>We've crunched the numbers & the best loan option for you is:</p>
+								<h1>BOOM!</h1>
+								<h2>We've crunched the numbers and here is your personalised quote:</h2>
 								<div id="form-wrapper">
 									<div class="form-item">
 										<div class="row">
 											<div class="col-md-12">
-												<label>YOUR REPAYMENTS</label>
+												<label>REPAYMENTS</label>
 												<p class="big-text">
-													<span id="loan-amount">$324.33 </span> <span class="small-text">weekly</span>
+													<span id="loan-amount"><strong>$324.33</strong></span> <span class="small-text">per week</span>
 												</p>
 												<p class="font-25">6.54% interest rate</p>
 											</div>
@@ -102,21 +100,22 @@
 									<div class="form-item">
 										<div class="row">
 											<div class="col-md-6">
-												<label>LOAN AMOUNT</label>
+												<label>REQUESTED LOAN AMOUNT</label>
+												<p>The cost of the car, less any cash deposit and trade-in</p>
 											</div>
 											<div class="col-md-6" style="text-align: right;">
-												<p class="font-25">$60,000.00</p>
+												<p class="font-25">$60,000</p>
 											</div>
 										</div>
 									</div>
 									<div class="form-item">
 										<div class="row">
 											<div class="col-md-6">
-												<label>FEES</label>
-												<p>As most CTP premiums are included in the car registration... <a>read more</a></p>
+												<label>ORIGINATION FEE</label>
+												<p>This includes the lenders fees and Stratton's fees <a>read more</a></p>
 											</div>
 											<div class="col-md-6" style="text-align: right;">
-												<p class="font-25">$450.00</p>
+												<p class="font-25">$450</p>
 											</div>
 										</div>
 									</div>
@@ -124,10 +123,10 @@
 										<div class="row">
 											<div class="col-md-6">
 												<label>TOTAL LOAN AMOUNT</label>
-												<p>This total is based on your review you have been contionally approved.</p>
+												<p>This combines the loan for the car and all associated fees</p>
 											</div>
 											<div class="col-md-6" style="text-align: right;">
-												<p class="font-25">$60,450.00</p>
+												<p class="font-25">$60,450</p>
 											</div>
 										</div>
 									</div>
@@ -135,7 +134,7 @@
 									<div class="button-wrapper">
 										<div class="row">
 											<div class="col-md-12">
-												<a href="verify.html" style="width: 100%; padding: 20px;" class="slds-button slds-button_outline-brand purple">VERIFY YOUR INCOME & GET INSTANTLY APPROVED</a>
+												<a href="verify.html" style="width: 100%; padding: 20px;" class="slds-button slds-button_outline-brand purple">VERIFY & GET INSTANTLY APPROVED</a>
 											</div>
 										</div>
 									</div>
@@ -153,7 +152,7 @@
 										<div class="col-md-6">
 											<div class="slds-form-element">
 												<div class="slds-form-element__control">
-													<input type="text" id="LastName" value="$60,000.00" style="width: 100%;" class="form-control" placeholder="Loan amount"/>
+													<input type="text" id="LastName" value="$60,000" style="width: 100%;" class="form-control" placeholder="Loan amount"/>
 												</div>
 											</div>
 										</div>
@@ -166,7 +165,7 @@
 										<div class="col-md-6">
 											<div class="slds-form-element">
 												<div class="slds-form-element__control">
-													<label>REPAYMENT</label>
+													<label>REPAYMENTS</label>
 													<div class="">
 														<select class="form-control no-padding change-amount" id="">
 															<option selected>Weekly</option>
@@ -184,11 +183,12 @@
 													<label>TERM</label>
 													<div class="">
 														<select class="form-control no-padding change-amount" id="">
-															<option>1 year</option>
 															<option>2 years</option>
 															<option>3 years</option>
 															<option>4 years</option>
 															<option selected>5 years</option>
+															<option>6 years</option>
+															<option>7 years</option>
 														</select>
 													</div>
 												</div>
@@ -200,7 +200,7 @@
 								<div class="button-wrapper">
 									<div class="row">
 										<div class="col-md-12">
-											<button id="recalculate" style="width: 100%;" class="slds-button slds-button_outline-brand blue">RECALCULATE YOUR QUOTE</button>
+											<br><button id="recalculate" style="width: 100%;" class="slds-button slds-button_outline-brand blue">RECALCULATE</button>
 										</div>
 									</div>
 								</div>
