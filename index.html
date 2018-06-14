@@ -144,7 +144,7 @@
 										<div class="col-md-12">
 											<label>YOUR QUOTE</label>
 											<p class="big-text">
-												<span id="loan-amount"><strong>$324.33 *</strong></span>
+												<span id="loan-amount">$324.33</span> *
 											</p>
 											<p class="font-25">6.54% interest rate</p>
 										</div>
@@ -216,13 +216,24 @@
 
 	<script>
 		$(document).ready(function () {
-			$("#show-all").on("click", function () {
+			var temp = false;
+			var amount = 648.66;
 
-				$(this).removeClass("purple");
-				$(this).addClass("normal");
-				$(".grey-side").removeClass("hidden");
-				$(".rest-content").removeClass("hidden");
-			})
+			$("#show-all").on("click",
+				function() {
+
+					$(this).removeClass("purple");
+					$(this).addClass("normal");
+					$(".grey-side").removeClass("hidden");
+					$(".rest-content").removeClass("hidden");
+
+					if (temp) {
+						$("#loan-amount").html(amount / 2);
+					} else {
+						$("#loan-amount").html(amount);
+					}
+					temp = !temp;
+				});
 		});
 	</script>
 </body>
