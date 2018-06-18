@@ -14,12 +14,11 @@
 				<div class="row header-top">
 					<div class="col-md-6 inline-block">
 						<img src="Content/img/logo.jpg" class="logo" />
-						<h2>Prepare for settlement</h2>
+						<h2>Finalise Car & Loan</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
 						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
 						</p>
 					</div>
 				</div>
@@ -29,15 +28,15 @@
 						<div class="slds-progress progress-top">
 							<ol class="slds-progress__list">
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Car</p>
+									<p class="progress-text">Car Details</p>
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Seller</p>
+									<p class="progress-text">Seller Details</p>
 
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Purchase details</p>
+									<p class="progress-text">Purchase Details</p>
 
 								</li>
 								<li class="slide-header">
@@ -45,7 +44,7 @@
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Direct debit</p>
+									<p class="progress-text">Direct Debit</p>
 
 								</li>
 							</ol>
@@ -101,14 +100,35 @@
 					<div class="col-md-10">
 						<div class="row">
 							<div class="col-md-7">
-								<h2>Seller details</h2>
-								<p>Provide information about the seller</p>
+								<h2>Seller Details</h2>
+								<p>We'll contact the seller for you to verify the car</p>
+								
+								<div class="amount-wrapper">
+			
+										<div class="form-item">
+											<h3>Where are you buying the car from?</h3>
+											<div class="slds-form-element">
+												<div class="slds-form-element__control">
+													<div class="">
+														<select class="form-control" id="residency-status">
+															<option>Select</option>
+															<option>Dealership</option>
+															<option>Private</option>
+															<option>Auction</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										</div>
+								
+								
 								<div id="form-wrapper">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-item">
 												<div class="slds-form-element">
-													<label class="">DEALERSHIP</label>
+													<label class="">DEALERSHIP NAME</label>
 													<div class="slds-form-element__control">
 														<input type="text" id="Dealership" style="width: 100%;" class="form-control" placeholder="Dealership" />
 													</div>
@@ -145,7 +165,7 @@
 										<div class="col-md-12">
 											<div class="form-item">
 												<div class="slds-form-element">
-													<label class="">E-MAIL</label>
+													<label class="">EMAIL</label>
 													<div class="slds-form-element__control">
 														<input type="text" id="Email" style="width: 100%;" class="form-control" placeholder="Email" />
 													</div>
@@ -153,9 +173,7 @@
 											</div>
 										</div>
 									</div>
-									
-									<h4>What's the seller's mobile number?</h4>
-									
+																		
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-item">

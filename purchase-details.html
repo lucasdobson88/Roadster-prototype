@@ -14,12 +14,11 @@
 				<div class="row header-top">
 					<div class="col-md-6 inline-block">
 						<img src="Content/img/logo.jpg" class="logo" />
-						<h2>Prepare for settlement</h2>
+						<h2>Finalise Car & Loan</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
 						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE</a>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">EXIT</a>
+							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
 						</p>
 					</div>
 				</div>
@@ -29,15 +28,15 @@
 						<div class="slds-progress progress-top">
 							<ol class="slds-progress__list">
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Car</p>
+									<p class="progress-text">Car Details</p>
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Seller</p>
+									<p class="progress-text">Seller Details</p>
 
 
 								</li>
 								<li class="slide-header slide-header-active">
-									<p class="progress-text">Purchase details</p>
+									<p class="progress-text">Purchase Details</p>
 
 								</li>
 								<li class="slide-header">
@@ -45,7 +44,7 @@
 
 								</li>
 								<li class="slide-header">
-									<p class="progress-text">Direct debit</p>
+									<p class="progress-text">Direct Debit</p>
 
 								</li>
 							</ol>
@@ -101,17 +100,17 @@
 					<div class="col-md-10">
 						<div class="row">
 							<div class="col-md-7">
-								<h2>Purchase details</h2>
+								<h2>Purchase Details</h2>
+								<p>Now we need the details of the agreed purchase of the car</p><br>
 
 								<div id="form-wrapper">
-									<h4>What is the car worth?</h4>
+									<h4>How much are paying for the car?</h4>
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-item">
 												<div class="slds-form-element">
-													<label class="">PURCHASE PRICE</label>
 													<div class="slds-form-element__control">
-														<input value="$50,000" type="text" id="PurchasePrice" style="width: 100%;" class="form-control" placeholder="Purchase Price" />
+														<input value="$60,000" type="text" id="PurchasePrice" style="width: 100%;" class="form-control" placeholder="Purchase Price" />
 													</div>
 												</div>
 											</div>
@@ -120,83 +119,37 @@
 
 									<div class="row">
 										<div class="col-md-12">
-											<h4>Did you have a cash contribution?</h4>
+											<br>
+											<h4>What is the cash deposit you're contributing?</h4>
 											<p>
-												A cash contribution is when a potential buyer gives a
-												seller a cash amount to hold the car.
+											A deposit is the cash amount you intend to contribute
 											</p>
-											<div class="form-item">
-												<div class="slds-form-element__control">
-													<div class="radio">
-														<label><input id="show-spouse" type="radio" name="optradio">YES</label>
-														<label><input type="radio" name="optradio">NO</label>
-													</div>
-												</div>
-											</div>
+											
 										</div>
-
+										
 										<div class="col-md-6">
 											<div class="form-item">
 												<div class="slds-form-element">
-													<label class="">CASH CONTRIBUTION</label>
 													<div class="slds-form-element__control">
-														<input value="$500" type="text" id="CashContribution" style="width: 100%;" class="form-control" placeholder="Cash Contribution" />
+														<input value="$" type="text" id="CashContribution" style="width: 100%;" class="form-control" placeholder="Cash Contribution" />
+													<br>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-
-									<div class="row">
-										<div class="col-md-12">
-											<h4>Did you have a deposit?</h4>
-											<p>
-												A cash contribution is when a potential buyer gives a
-												seller a cash amount to hold the car.
-											</p>
-											<div class="form-item">
-												<div class="slds-form-element__control">
-													<div class="radio">
-														<label><input id="show-spouse" type="radio" name="optradio">YES</label>
-														<label><input type="radio" name="optradio">NO</label>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-md-6">
-											<div class="form-item">
-												<div class="slds-form-element">
-													<label class="">DEPOSIT</label>
-													<div class="slds-form-element__control">
-														<input value="$9,500" type="text" id="Deposit" style="width: 100%;" class="form-control" placeholder="Deposit" />
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
 
 									<div class="col-md-12">
-										<h4>Do you have a trade-in?</h4>
-										<div class="form-item">
-											<div class="slds-form-element__control">
-												<div class="radio">
-													<label><input id="show-spouse" type="radio" name="optradio">YES</label>
-													<label><input type="radio" name="optradio">NO</label>
-												</div>
-											</div>
-										</div>
+									<h4>How much is the trade-in?</h4>
+										
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
-										<h4>How much do you plan to trade-in the car for?</h4>
 										<div class="form-item">
 											<div class="slds-form-element">
-												<label class="">TRADE-IN PRICE</label>
 												<div class="slds-form-element__control">
-													<input value="$9,000" type="text" id="Trade" style="width: 100%;" class="form-control" placeholder="Trade-in price"/>
+													<input value="$" type="text" id="Trade" style="width: 100%;" class="form-control" placeholder="Trade-in price"/>
 												</div>
 											</div>
 										</div>
@@ -238,7 +191,7 @@
 									- Less deposit
 								</div>
 								<div style="text-align: right;" class="col-md-6">
-									<a>$9,500.00</a>
+									<a>$5,000</a>
 								</div>
 							</div>
 							<hr />
@@ -248,7 +201,7 @@
 									- Less trade in
 								</div>
 								<div style="text-align: right;" class="col-md-6">
-									<a>$9,000.00</a>
+									<a>$6,000</a>
 								</div>
 							</div>
 							<hr />
@@ -257,7 +210,7 @@
 									<h6>Total loan amount</h6>
 								</div>
 								<div style="text-align: right;" class="col-md-6">
-									<p class="font-25">$60,000.00</p>
+									<p class="font-25">$49,000</p>
 								</div>
 							</div>
 						</div>

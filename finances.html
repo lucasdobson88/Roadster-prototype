@@ -111,8 +111,101 @@
 					<div class="row">
 					<!--Finance wrapper start-->
 					<div class="col-md-7 finance-wrapper">
-					<h2>What are your finances?</h2>
-					<p>Must include all your household finances</p>
+					<h2>What is your financial situation?</h2>
+					<p>Please provide a full breakdown of your finances</p>
+					
+					
+										<hr/>
+					<div class="form-item">
+						<div class="row">
+							<div class="col-md-7">
+								<h3>Income</h3>
+							</div>
+							<div class="col-md-5">
+								<p class="align-right">
+									<div class="dropdown">
+										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+											<a data-id="Primary income (After tax)" class="dropdown-item addIncome">Primary income (After tax)</a>
+											<a data-id="Bonus (After tax)" class="dropdown-item addIncome">Bonus (After tax)</a>
+											<a data-id="Commission (After tax)" class="dropdown-item addIncome">Commission (After tax)</a>
+											<a data-id="Overtime (After tax)" class="dropdown-item addIncome">Overtime (After tax)</a>
+											<a data-id="Rental income" class="dropdown-item addIncome">Rental income</a>
+											<a data-id="Government benefits" class="dropdown-item addIncome">Government benefits</a>
+											<a data-id="Other" class="dropdown-item addIncome">Other</a>
+										</div>
+									</div>
+								</p>
+							</div>
+						</div>
+						<div class="income-items-wrapper hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<label>INCOME TYPE</label>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-5">
+											<label>AMOUNT</label>
+										</div>
+										<div class="col-md-4">
+											<label>&nbsp;</label>
+										</div>
+										<div class="col-md-3">
+											<label>&nbsp;</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="income-items">
+							</div>
+						</div>
+						<div class="finance-form income-finance-form hidden">
+							<div class="add-finance-wrapper">
+								<div class="row">
+									<div class="col-md-8">
+
+										<div class="slds-form-element">
+											<label>AMOUNT</label>
+											<div class="slds-form-element__control">
+												<input type="text" id="incomeBalance" style="width: 100%;" class="form-control" placeholder="$"/>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<label class="">PER</label>
+												<div class="">
+													<select class="form-control" id="">
+														<option value="99">Month</option>
+														<option value="1">Fortnight</option>
+														<option value="2">Week</option>
+													</select>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<hr/>
+										<div class="button-wrapper">
+											<button id="income-submit" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					
+					
+					<hr>
+					
 					<div id="form-wrapper">
 					<div class="assets-wrapper">
 						<div class="form-item">
@@ -287,98 +380,13 @@
 							</div>
 						</div>
 					</div>
-					<hr/>
-					<div class="form-item">
-						<div class="row">
-							<div class="col-md-7">
-								<h3>Income</h3>
-							</div>
-							<div class="col-md-5">
-								<p class="align-right">
-									<div class="dropdown">
-										<button class="slds-button slds-button_outline-brand normal" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Add
-										</button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-											<a data-id="Primary income (After tax)" class="dropdown-item addIncome">Primary income (After tax)</a>
-											<a data-id="Bonus (After tax)" class="dropdown-item addIncome">Bonus (After tax)</a>
-											<a data-id="Commission (After tax)" class="dropdown-item addIncome">Commission (After tax)</a>
-											<a data-id="Overtime (After tax)" class="dropdown-item addIncome">Overtime (After tax)</a>
-											<a data-id="Rental income" class="dropdown-item addIncome">Rental income</a>
-											<a data-id="Government benefits" class="dropdown-item addIncome">Government benefits</a>
-											<a data-id="Other" class="dropdown-item addIncome">Other</a>
-										</div>
-									</div>
-								</p>
-							</div>
-						</div>
-						<div class="income-items-wrapper hidden">
-							<div class="row">
-								<div class="col-md-6">
-									<label>INCOME TYPE</label>
-								</div>
-								<div class="col-md-6">
-									<div class="row">
-										<div class="col-md-5">
-											<label>AMOUNT</label>
-										</div>
-										<div class="col-md-4">
-											<label>&nbsp;</label>
-										</div>
-										<div class="col-md-3">
-											<label>&nbsp;</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="income-items">
-							</div>
-						</div>
-						<div class="finance-form income-finance-form hidden">
-							<div class="add-finance-wrapper">
-								<div class="row">
-									<div class="col-md-8">
 
-										<div class="slds-form-element">
-											<label>AMOUNT</label>
-											<div class="slds-form-element__control">
-												<input type="text" id="incomeBalance" style="width: 100%;" class="form-control" placeholder="$"/>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="slds-form-element">
-											<div class="slds-form-element__control">
-												<label class="">PER</label>
-												<div class="">
-													<select class="form-control" id="">
-														<option value="99">Month</option>
-														<option value="1">Fortnight</option>
-														<option value="2">Week</option>
-													</select>
-												</div>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<hr/>
-										<div class="button-wrapper">
-											<button id="income-submit" type="button" class="slds-button slds-button_outline-brand purple">SAVE</button>
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-						</div>
-					</div>
 					<hr/>
 					<div class="form-item">
 						<div class="row">
 							<div class="col-md-7">
 								<h3>Expenses</h3>
+								<p>Must include all household expenses</p>
 							</div>
 							<div class="col-md-5">
 								<p class="align-right">
@@ -468,8 +476,8 @@
 								</p>
 							</div>
 							<div class="col-md-6">
-								<p class="align-right remove-button">
-									<a data-toggle="modal" data-target="#optionsModal" class="slds-button slds-button_outline-brand purple">NEXT</a>
+								<p class="align-right">
+									<a href="overview.html" class="slds-button slds-button_outline-brand purple">NEXT</a>
 								</p>
 							</div>
 						</div>
@@ -936,26 +944,7 @@
 
 	</div>
 
-<!-- Modal -->
-<div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Add Spousal income?</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				
-			</div>
-			<div class="modal-footer">
-				<a data-dismiss="modal" id="show-spouse-info" class="slds-button slds-button_outline-brand purple show-spouse">YES</a>
-				<a id="go-to-next-page" data-dismiss="modal" class="slds-button slds-button_outline-brand normal">NO</a>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -987,7 +976,6 @@
 					function() {
 						$(".finance-wrapper").addClass("hidden");
 						$(".spouse-wrapper").removeClass("hidden");
-						$(".remove-button").html("<a href='overview.html' class='slds-button slds-button_outline-brand purple'>NEXT</a>");
 					});
 			});
 			$(".hide-spouse").each(function() {
@@ -997,15 +985,6 @@
 						$(".spouse-wrapper").addClass("hidden");
 					});
 			});
-
-			$("#go-to-next-page").on("click",
-				function() {
-					window.location.href = 'overview.html';
-				});
-
-			$("#show-spouse-info").on("click", function() {
-				$(".remove-button").html("<a href='overview.html' class='slds-button slds-button_outline-brand purple'>NEXT</a>");
-			})
 		});
 	</script>
 </body>
