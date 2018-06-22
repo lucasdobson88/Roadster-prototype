@@ -17,9 +17,6 @@
 						<h2>Apply</h2>
 					</div>
 					<div class="col-md-6 button-wrapper">
-						<p>
-							<a href="dashboard-fail.html" class="slds-button slds-button_outline-brand normal">SAVE & EXIT</a>
-						</p>
 					</div>
 				</div>
 
@@ -112,7 +109,7 @@
 								<h2>Car Details</h2>
 								<div id="form-wrapper">
 									<div class="form-item">
-										<h3>Have you decided what car you want to buy?</h3>
+										<h3>Have you decided what car you want to buy? *</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
 												<div class="">
@@ -127,7 +124,7 @@
 									</div>
 
 									<div class="form-item">
-										<h3>What's the condition of the car?</h3>
+										<h3>What's the condition of the car? *</h3>
 										<div class="slds-form-element">
 											<div class="slds-form-element__control">
 												<div class="">
@@ -249,7 +246,7 @@
 
 									<div class="body-type-wrapper hidden">
 										<div id="car-body-type" class="form-item hidden">
-											<h3>What is the model of the Ford?</h3>
+											<h3>What is the body type of the Ford Mustang?</h3>
 											<div class="slds-form-element">
 												<div class="slds-form-element__control">
 													<button id="select-value" type="disabled" class="slds-button slds-button_neutral select-button">Ford</button>
@@ -301,7 +298,7 @@
 											<div class="slds-form-element">
 												<div class="slds-form-element__control">
 													<button type="button" data-toggle="modal" data-target="#optionsModal" class="slds-button slds-button_outline-brand purple">CHOOSE FACTORY OPTIONS</button>
-													<button id="skip-options" type="button" class="slds-button slds-button_outline-brand normal">NONE</button>
+													<button id="skip-options" type="button" class="slds-button slds-button_outline-brand normal">SKIP</button>
 												</div>
 											</div>
 										</div>
@@ -326,58 +323,58 @@
 										</div>
 									</div>
 
-									<div class="amount-wrapper hidden">
-										<div class="form-item">
-											<h3>What is the purchase price of the Ford Mustang?</h3>
-											<div class="slds-form-element">
-												<div class="slds-form-element__control">
-													<input type="text" id="PurchasePrice" style="width: 100%;" class="form-control" placeholder="Purchase price" />
-												</div>
+								<div class="amount-wrapper hidden">
+									<div class="form-item">
+										<h3>What is the purchase price of the Ford Mustang?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<input type="text" id="PurchasePrice" style="width: 100%;" class="form-control" placeholder="Purchase price" />
 											</div>
 										</div>
+									</div>
 
-										<div class="form-item">
-											<h3>How much do you want to borrow?</h3>
-											<div class="slds-form-element">
-												<div class="slds-form-element__control">
-													<input type="text" id="LoanAmount" style="width: 100%;" class="form-control" placeholder="Loan amount" />
-												</div>
+									<div class="form-item">
+										<h3>How much do you want to borrow? *</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<input type="text" id="LoanAmount" style="width: 100%;" class="form-control" placeholder="$60,000" />
 											</div>
 										</div>
+									</div>
 
-										<div class="form-item">
-											<h3>How many kilometers has the Ford Mustang done?</h3>
-											<div class="slds-form-element">
-												<div class="slds-form-element__control">
-													<div class="">
-														<select class="form-control" id="residency-status">
-															<option selected>0 - 20,000km</option>
-															<option>20,000 - 50,000km</option>
-															<option>50,000 - 80,000km</option>
-															<option>80,000 - 110,000km</option>
-															<option>110,000 - 140,000km</option>
-															<option>140,000 - 170,000km</option>
-															<option>170,000 - 200,000km</option>
-															<option>Over 200,000km</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="form-item">
-											<h3>How will the car be used majority of the time?</h3>
-											<div class="slds-form-element">
-												<div class="form-check">
-													<input type="checkbox" class="form-check-input" id="personal-use-checkbox">
-													<label class="form-check-label" for="exampleCheck1">Personal Use</label>
-												</div>
-												<div class="form-check">
-													<input type="checkbox" class="form-check-input" id="business-use-checkbox">
-													<label class="form-check-label" for="exampleCheck1">Business Use</label>
+									<div class="form-item">
+										<h3>How many kilometers has the Ford Mustang done?</h3>
+										<div class="slds-form-element">
+											<div class="slds-form-element__control">
+												<div class="">
+													<select class="form-control" id="residency-status">
+														<option selected>0 - 20,000km</option>
+														<option>20,000 - 50,000km</option>
+														<option>50,000 - 80,000km</option>
+														<option>80,000 - 110,000km</option>
+														<option>110,000 - 140,000km</option>
+														<option>140,000 - 170,000km</option>
+														<option>170,000 - 200,000km</option>
+														<option>Over 200,000km</option>
+													</select>
 												</div>
 											</div>
 										</div>
 									</div>
+									<div class="form-item">
+										<h3>How will the car be used majority of the time? *</h3>
+										<div class="slds-form-element">
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="personal-use-checkbox">
+												<label class="form-check-label" for="exampleCheck1">Personal Use</label>
+											</div>
+											<div class="form-check">
+												<input type="checkbox" class="form-check-input" id="business-use-checkbox">
+												<label class="form-check-label" for="exampleCheck1">Business Use</label>
+											</div>
+										</div>
+									</div>
+								</div>
 									<div class="button-wrapper">
 										<div class="row">
 											<div class="col-md-6">
